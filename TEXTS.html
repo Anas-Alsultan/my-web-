@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TEXTS</title> <link rel="stylesheet" href="./TEXTS_files/style.css">
+      <script> window.addEventListener("load", function(){ alert("the window is loaded") });
+
+
+
+
+function post(){
+    var postText = document.getElementById("post-text").value;
+    var postContainer = document.getElementById("post-container");
+  
+    var postElement = document.createElement("div");
+    postElement.classList.add("posting");
+  
+    var userProfile = document.createElement("div");
+    userProfile.classList.add("user-profile");
+  
+    var userProfileImg = document.createElement("img");
+    userProfileImg.setAttribute("src", "images/profile-pic.png");
+  
+    var userProfileInfo = document.createElement("div");
+    var userProfileName = document.createElement("p");
+    userProfileName.innerHTML = "Anas Alsultan";
+    var postDate = document.createElement("small");
+    postDate.innerHTML = new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true, month: 'short', day: 'numeric', year: 'numeric' });
+  
+    userProfileInfo.appendChild(userProfileName);
+    userProfileInfo.appendChild(postDate);
+  
+    userProfile.appendChild(userProfileImg);
+    userProfile.appendChild(userProfileInfo);
+  
+    var postContent = document.createElement("p");
+    postContent.innerHTML = postText;
+  
+    var postActions = document.createElement("div");
+    postActions.classList.add("com-share-like");
+  
+    var icons = document.createElement("div");
+    icons.classList.add("icons");
+  
+    var likeButton = document.createElement("div");
+    var likeIcon = document.createElement("img");
+    likeIcon.setAttribute("src", "images/like-blue.png");
+    var likeText = document.createElement("span");
+    likeText.innerHTML = "Like";
+    likeButton.appendChild(likeIcon);
+    likeButton.appendChild(likeText);
+  
+    var commentButton = document.createElement("div");
+    var commentIcon = document.createElement("img");
+    commentIcon.setAttribute("src", "images/comments.png");
+    var commentText = document.createElement("span");
+    commentText.innerHTML = "Comment";
+    commentButton.appendChild(commentIcon);
+    commentButton.appendChild(commentText);
+  
+    var shareButton = document.createElement("div");
+    var shareIcon = document.createElement("img");
+    shareIcon.setAttribute("src", "images/share.png");
+    var shareText = document.createElement("span");
+    shareText.innerHTML = "Share";
+    shareButton.appendChild(shareIcon);
+    shareButton.appendChild(shareText);
+  
+    icons.appendChild(likeButton);
+    icons.appendChild(commentButton);
+    icons.appendChild(shareButton);
+  
+    postActions.appendChild(icons);
+  
+    postElement.appendChild(userProfile);
+    postElement.appendChild(postContent);
+    postElement.appendChild(postActions);
+  
+    postContainer.insertBefore(postElement, postContainer.firstChild);
+  
+    document.getElementById("post-text").value = "";
+  }
+  
+  function shareStory(){
+    // code to share story
+  }
+
+
+</script> </head> <body>     
+ 
+ 
+ 
+ 
+ 
+     <nav> 
+         <dev class="nav-left">
+         <img src="./TEXTS_files/logo.png" alt="logo" class="logo">
+         <ul>
+          <li>  <img src="./TEXTS_files/inbox.png"> </li>
+          <li><img src="./TEXTS_files/notification.png"> </li> 
+          <li> <img src="./TEXTS_files/video.png"></li> 
+         </ul>
+     </dev>
+ 
+       <div class="nav-right">
+         <div class="search-box">
+          <img src="./TEXTS_files/search.png">
+            <input type="text" placeholder="search...">
+       </div>
+     <div>
+           <div class="nav-user-icon online">
+         <img src="./TEXTS_files/profile-pic.png" alt="profile">
+     </div>
+   </div></div></nav>
+      <!--container-->
+ <div class="container">
+ 
+       <!--left-sidebar-->
+     <div class="left-sidebar">
+         <div class="emp-links">
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#"><img src="./TEXTS_files/news.png">last nwes</a>
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#"><img src="./TEXTS_files/friends.png">friends</a>
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#"><img src="./TEXTS_files/group.png">groups</a>
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#"><img src="./TEXTS_files/marketplace.png">marketplace</a>
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#"><img src="./TEXTS_files/watch.png">watch</a>
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#">see more</a>
+         </div>
+         <div class="shortcut-links">
+             <p>your shortcuts</p>
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#"><img src="./TEXTS_files/shortcut-1.png">learn python</a>
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#"><img src="./TEXTS_files/shortcut-2.png">learn java</a>
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#"><img src="./TEXTS_files/shortcut-3.png">learn PHP+SQL</a>
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#"><img src="./TEXTS_files/shortcut-4.png">learn using UDEMY platform</a>
+         </div>
+     </div>
+ 
+ 
+        <!--main-content-->
+     <div class="main-content">
+         <div class="story-gallary">
+             <div class="story s1">
+                 <img src="./TEXTS_files/upload.png">
+                   <p>Post story</p>
+                  </div>
+                  <div class="story s2">
+                     <img src="./TEXTS_files/member-1.png">
+                       <p>Melek</p>
+                      </div>
+                      <div class="story s3">
+                         <img src="./TEXTS_files/member-2.png">
+                           <p>Mohammed</p>
+                          </div>
+                          <div class="story s4">
+                             <img src="./TEXTS_files/member-3.png">
+                               <p>Mariam</p>
+                              </div>
+                              <div class="story s5">
+                                 <img src="./TEXTS_files/member-4.png">
+                                   <p>Anas</p>
+                                  </div>
+             </div>
+             
+                <div class="main-content"> <div class="create-post">
+ <div class="user-profile"> <img src="./TEXTS_files/profile-pic.png"> <textarea id="post-text" placeholder="What&#39;s on your mind?"></textarea> </div>
+ <div class="post-buttons"> <button onclick="post()">Post</button> <button onclick="shareStory()">Share a story</button> </div> </div> <div id="post-container"><div class="posting"><div class="user-profile"><img src="./TEXTS_files/profile-pic.png"><div><p>Anas Alsultan</p><small>Jun 6, 2023, 4:33 AM</small></div></div><p></p><div class="com-share-like"><div class="icons"><div><img src="./TEXTS_files/like-blue.png"><span>Like</span></div><div><img src="./TEXTS_files/comments.png"><span>Comment</span></div><div><img src="./TEXTS_files/share.png"><span>Share</span></div></div></div></div>
+ <!-- Existing posts will be added here --> </div> </div>
+
+<div class="write-post">
+                <div class="user-profile">
+                     <img src="./TEXTS_files/profile-pic.png">
+                     <div>
+                     <p>Anas Alsultan</p>
+                     <small>public</small>
+                  </div>
+                </div>
+ 
+                <div class="post-input">
+                 <textarea rows="3" placeholder="write something...Anas"></textarea>
+                 <div class="add-post-links">
+                     <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html"><img src="./TEXTS_files/live-video.png">live vide</a>
+                     <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html"><img src="./TEXTS_files/photo.png">photo/vedio</a>
+                     <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html"><img src="./TEXTS_files/feeling.png">Feeling/Activity</a>
+                 </div>
+                </div>
+             </div>
+ 
+             <div class="posting">
+                 <div class="user-profile">
+                     <img src="./TEXTS_files/profile-pic.png">
+                     <div>
+                     <p>Anas Alsultan</p>
+                     <small>april 2 2023, 1:30am </small>
+                  </div>
+                </div>
+                <p> "Here you go some comments from Udemy learners" WHAT are wating for! go and learn programing with UDMY cours <a href="https://www.udemy.com/?id=[[timestamp]]" target="_blank"> udemy online courses </a> </p>
+                <iframe width="100%" height="315" src="./TEXTS_files/7m7MCc8oyS0.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                <div class="com-share-like">
+                 <div class="icons">
+                     <div> <img src="./TEXTS_files/like-blue.png"> Like</div>
+                     <div> <img src="./TEXTS_files/comments.png"> Comment</div>
+                     <div> <img src="./TEXTS_files/share.png"> Share</div>
+ 
+                 </div>
+                </div>
+             </div>
+ 
+             <div class="posting">
+                 <div class="user-profile">
+                     <img src="./TEXTS_files/profile-pic.png">
+                     <div>
+                     <p>Anas Alsultan</p>
+                     <small>april 2 2023, 1:30am </small>
+                  </div>
+                </div>
+                <p> "A trip with family for this place All what person wants :)" </p>
+                <img src="./TEXTS_files/trip.jpeg" width="100%">
+                <div class="com-share-like">
+                 <div class="icons">
+                     <div> <img src="./TEXTS_files/like-blue.png"> Like</div>
+                     <div> <img src="./TEXTS_files/comments.png"> Comment</div>
+                     <div> <img src="./TEXTS_files/share.png"> Share</div>
+ 
+                 </div>
+                </div>
+             </div>
+             
+     </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+         <!--right-sidebar-->
+     <div class="right-sidebar">
+ 
+         <div class="sidebar-title">
+             <h4>Events</h4>
+             <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#">See more</a>
+         </div>
+         <div class="event">
+             <div class="left-event">
+                 <h3>23</h3>
+                 <span>may</span>
+             </div>
+ 
+     </div>
+       <div class="right-event">
+        <h4>Birthday</h4>
+        <p>Anas Alsultan , YEMEN</p>
+        <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#">More Info</a>
+       </div>
+ 
+         <div class="event">
+             <div class="left-event">
+                 <h3>24</h3>
+                 <span>april</span>
+             </div>
+ 
+     </div>
+     <div class="right-event">
+         <h4>Midterm exam</h4>
+         <p>17 Eylül bandırma Üniversite , Balıkesir /Bandırma</p>
+         <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#">More Info</a>
+       </div>
+ 
+       <div class="sidebar-title">
+         <h4>conversation</h4>
+         <a href="file:///C:/Users/Anas%20Alsultan/Desktop/texts3/index.html#">hide</a>
+     </div>
+     
+     <div class="online-list">
+         <div class="online">
+             <img src="./TEXTS_files/member-1.png">
+         </div>
+         <h2>Melek</h2>
+         
+     </div>
+ 
+       
+     <div class="online-list">
+         <div class="online">
+             <img src="./TEXTS_files/member-2.png">
+         </div>
+         <h2>Mohammed</h2>
+         
+     </div>
+ 
+       
+     <div class="online-list">
+         <div class="online">
+             <img src="./TEXTS_files/member-3.png">
+         </div>
+         <h2>Mariam</h2>
+         
+     </div>
+ 
+       
+     <div class="online-list">
+         <div class="online">
+             <img src="./TEXTS_files/member-4.png">
+         </div>
+         <h2>Ali </h2>
+         
+      </div>
+     </div>
+ 
+ 
+     
+ 
+ 
+ 
+&nbsp;</div></body></html>
